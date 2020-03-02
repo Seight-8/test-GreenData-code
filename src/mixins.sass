@@ -1,0 +1,36 @@
+@mixin blocks
+    display: flex
+    justify-content: center
+    div
+        margin: 0.2%
+        text-align: center
+        background: #fff
+        border-radius: 7px
+        border: 1.5px inset #ddd
+
+@mixin Btn ($colorBtn)
+    position: absolute
+    height: 30px
+    border: none
+    border-radius: 5px
+    background: $colorBtn
+    color: #fff
+    box-shadow: 0 0 5px #000
+    transition-duration: 0.3s
+    font-weight: bold
+
+@mixin hoverBtn($hoverColor)
+    background: $hoverColor
+    transition-duration: 0.3s
+
+@mixin focusBtn
+    outline: none
+
+@mixin activeBtn ($activeColor)
+    background: $activeColor
+
+@mixin dis($colorDis)
+    background: $colorDis
+    color: #ffffffa4
+    box-shadow: none
+

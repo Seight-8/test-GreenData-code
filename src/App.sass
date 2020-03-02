@@ -1,0 +1,146 @@
+@import "mixins"
+
+*
+    padding: 0
+    margin: 0
+
+body
+    background: #bec4bb
+
+.l2
+    top: 100px
+.list
+    position: absolute
+    width: 50%
+    top: 70px
+    left: 10px
+    .data
+        cursor: pointer
+        @include blocks
+    .head
+        @include blocks
+
+    .w_name
+        flex-grow: 1
+    .w_position
+        width: 15%
+    .w_status
+        width: 15%
+    .w_date
+        width: 20%
+    .w_gender
+        width: 10%
+.card
+    position: absolute
+    width: 40%
+    height: 340px
+    right: 10px
+    top: 50px
+    border-radius: 20px
+    background: #a1d8fd
+    padding: 1%
+    box-shadow: 0 0 5px #000
+    .headText
+        font-size: 20px
+        font-weight: bold
+    .alert
+        color: #ac1414
+        font-weight: bold
+
+    .cardCont
+        display: flex
+        position: relative
+        .fired
+            margin-top: 15px
+        .cardElem
+            margin: 5px
+            flex-grow: 1
+            padding: 10px
+            div
+                padding: 5px
+                input
+                    padding: 5px
+                    border-radius: 5px
+                input:focus
+                    outline: none
+        .focus:focus
+            box-shadow: 0 0 5px #000
+    .save
+        bottom: 15px
+        width: 130px
+        @include Btn(#0f84e4)
+    .save:hover
+        bottom: 18px
+        @include hoverBtn(#0e6ebd)
+    .save:focus
+        @include focusBtn
+    .save:active
+        @include activeBtn (#1895fc)
+
+
+
+    .close
+        width: 100px
+        bottom: 15px
+        left: 160px
+        @include Btn(#811818)
+    .close:hover
+        bottom: 18px
+        @include hoverBtn(#811818)
+    .close:focus
+        @include focusBtn
+    .close:active
+        @include activeBtn (#971c1c)
+
+
+.radioNone
+    display: none
+
+.active
+    background: #1895fc
+    box-shadow: 0 0 5px #1895fc
+    border-radius: 5px
+
+.del
+    top: 20px
+    left: 250px
+    width: 240px
+    @include Btn(#811818)
+.del:hover
+    top: 18px
+    @include hoverBtn(#811818)
+.del:focus
+    @include focusBtn
+.del:active
+    @include activeBtn (#971c1c)
+
+
+.del[disabled]
+    background: #551111f1
+    color: #ffffffa4
+    box-shadow: none
+    @include dis(#551111f1)
+.del[disabled]:hover
+    @include dis(#551111f1)
+    top: 20px
+
+.add
+    top: 20px
+    left: 20px
+    width: 210px
+    @include Btn(#0f84e4)
+.add:hover
+    top: 18px
+     @include hoverBtn(#0e6ebd)
+.add:focus
+    @include focusBtn
+.add:active
+    @include activeBtn (#1895fc)
+.add[disabled]
+    @include dis(#0f5d9c)
+.add[disabled]:hover
+    @include dis(#0f5d9c)
+    top: 20px
+
+.l2
+    top: 102px

@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #bec4bb;
+}
+
+.l2 {
+  top: 100px;
+}
+
+.list {
+  position: absolute;
+  width: 50%;
+  top: 70px;
+  left: 10px;
+}
+
+.list .data {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list .data div {
+  margin: 0.2%;
+  text-align: center;
+  background: #fff;
+  border-radius: 7px;
+  border: 1.5px inset #ddd;
+}
+
+.list .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list .head div {
+  margin: 0.2%;
+  text-align: center;
+  background: #fff;
+  border-radius: 7px;
+  border: 1.5px inset #ddd;
+}
+
+.list .w_name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.list .w_position {
+  width: 15%;
+}
+
+.list .w_status {
+  width: 15%;
+}
+
+.list .w_date {
+  width: 20%;
+}
+
+.list .w_gender {
+  width: 10%;
+}
+
+.card {
+  position: absolute;
+  width: 40%;
+  height: 340px;
+  right: 10px;
+  top: 50px;
+  border-radius: 20px;
+  background: #a1d8fd;
+  padding: 1%;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+.card .headText {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card .alert {
+  color: #ac1414;
+  font-weight: bold;
+}
+
+.card .cardCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.card .cardCont .fired {
+  margin-top: 15px;
+}
+
+.card .cardCont .cardElem {
+  margin: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+}
+
+.card .cardCont .cardElem div {
+  padding: 5px;
+}
+
+.card .cardCont .cardElem div input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card .cardCont .cardElem div input:focus {
+  outline: none;
+}
+
+.card .cardCont .focus:focus {
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+.card .save {
+  bottom: 15px;
+  width: 130px;
+  position: absolute;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #0f84e4;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.card .save:hover {
+  bottom: 18px;
+  background: #0e6ebd;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.card .save:focus {
+  outline: none;
+}
+
+.card .save:active {
+  background: #1895fc;
+}
+
+.card .close {
+  width: 100px;
+  bottom: 15px;
+  left: 160px;
+  position: absolute;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #811818;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.card .close:hover {
+  bottom: 18px;
+  background: #811818;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.card .close:focus {
+  outline: none;
+}
+
+.card .close:active {
+  background: #971c1c;
+}
+
+.radioNone {
+  display: none;
+}
+
+.active {
+  background: #1895fc;
+  -webkit-box-shadow: 0 0 5px #1895fc;
+          box-shadow: 0 0 5px #1895fc;
+  border-radius: 5px;
+}
+
+.del {
+  top: 20px;
+  left: 250px;
+  width: 240px;
+  position: absolute;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #811818;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.del:hover {
+  top: 18px;
+  background: #811818;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.del:focus {
+  outline: none;
+}
+
+.del:active {
+  background: #971c1c;
+}
+
+.del[disabled] {
+  background: #551111f1;
+  color: #ffffffa4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #551111f1;
+  color: #ffffffa4;
+  box-shadow: none;
+}
+
+.del[disabled]:hover {
+  background: #551111f1;
+  color: #ffffffa4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 20px;
+}
+
+.add {
+  top: 20px;
+  left: 20px;
+  width: 210px;
+  position: absolute;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #0f84e4;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.add:hover {
+  top: 18px;
+  top-background: #0e6ebd;
+  top-transition-duration: 0.3s;
+}
+
+.add:focus {
+  outline: none;
+}
+
+.add:active {
+  background: #1895fc;
+}
+
+.add[disabled] {
+  background: #0f5d9c;
+  color: #ffffffa4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.add[disabled]:hover {
+  background: #0f5d9c;
+  color: #ffffffa4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 20px;
+}
+
+.l2 {
+  top: 102px;
+}
+/*# sourceMappingURL=App.css.map */
